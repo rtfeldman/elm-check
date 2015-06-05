@@ -102,7 +102,7 @@ float =
           , (1, Random.float (toFloat Random.minInt) (toFloat Random.maxInt))
           ] (Random.float -50 50)
   in
-      investigator (Random.float -50 50) Shrink.float
+      investigator generator Shrink.float
 
 {-| Investigator char. Generates random ascii chars using the `ascii` generator
 from elm-random-extra and the `char` shrinker from elm-shrink. Ideal for local
